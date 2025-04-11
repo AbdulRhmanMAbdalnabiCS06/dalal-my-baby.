@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إلى طفلتي دلولة البطة الكيوت ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to top right, #ffe4ec, #fff0f5, #ffccdd);
+      text-align: center;
+      margin: 0;
+      padding: 30px 10px;
+      overflow-x: hidden;
+    }
+
+    h1, h2 {
+      color: #d63384;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    p {
+      color: #6c217d;
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s ease;
+      animation: popIn 1s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    #question {
+      margin-top: 40px;
+      font-size: 1.8em;
+      color: #aa1458;
+      animation: bounce 2s infinite;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      font-size: 1.3em;
+      padding: 12px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .yes {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .yes:hover {
+      background-color: #ff85c1;
+      transform: scale(1.05);
+    }
+
+    .no {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    .no:hover {
+      background-color: #ff7a7a;
+      transform: scale(1.05);
+    }
+
+    .message, .extra-messages {
+      margin-top: 30px;
+      font-size: 1.4em;
+      color: #d1226d;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .extra-messages {
+      font-size: 1.2em;
+      color: #7b1a63;
+      line-height: 1.8;
+    }
+
+    .dates {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #8e1f5a;
+    }
+
+    .special-notes {
+      background: #fff0fa;
+      border: 2px dashed #e699b2;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 700px;
+      color: #a4185f;
+      font-size: 1.2em;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      position: fixed;
+      background-color: red;
+      transform: rotate(45deg);
+      animation: float 6s linear infinite;
+      opacity: 0.8;
+      z-index: 10;
+    }
+
+    .heart::before, .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      transition: transform 0.3s;
+    }
+
+    .scroll-to-top:hover {
+      transform: scale(1.1);
+      background-color: #ff85c1;
+    }
+
+    input[type="password"] {
+      font-size: 1.2em;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 2px solid #ff69b4;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- صفحة كلمة المرور الرئيسية -->
+  <div id="passwordPage">
+    <h1>أدخل كلمة المرور</h1>
+    <input type="password" id="password" placeholder="أدخل كلمة السر" />
+    <button onclick="checkPassword()">دخول</button>
+  </div>
+
+  <!-- المحتوى الكامل -->
+  <div id="content" style="display:none;">
+    <h1>دلولة طفلتي الكيوت 🦆💕</h1>
+    <p>يا طفلتي وحبيبة قلبي دلال، انتي حياتي ورح أضل معك وجنبك يا روحي لأنك بتجنني 💞</p>
+
+    <div class="gallery">
+      <img src="dalal1.jpg" alt="دلال حاكمة قلبي 😍">
+      <img src="dalal2.jpg" alt="البطوطة الدلوعة 🐥">
+      <img src="dalal3.jpg" alt="البطة الحارسة 💪🦢">
+    </div>
+
+    <div class="dates">
+      <p>تاريخ تعارفنا: 💘 17 / 10 / 2024</p>
+      <p>تاريخ اعترافنا لبعض: 💌 11 / 11 / 2024</p>
+      <p>أول مكالمة لنا: ☎️ 3 / 1 / 2025</p>
+    </div>
+
+    <div class="special-notes">
+      <p>✨ أحبك بكل لغات العالم، ودائما قلبي بنادي باسمك يا دلال!</p>
+      <p>🦢 كل لحظة معك  بتمنى نكون مع بعض لانها احلى الشياء في يومي لما تكوني معي 💭🌸</p>
+      <p>🎀 وعد مني، رح تظلي طفلتي، أمورتي، وحبيبتي، وكل دنيتي 💕</p>
+    </div>
+
+    <div id="question">ولي بتحبيني يا بطة؟ 🦆❤️</div>
+    <div class="buttons">
+      <button class="btn yes" onclick="showLove()">اه بحبك كثير ❤️🥰</button>
+      <button class="btn no" onclick="sayNo()">لوؤة 😝</button>
+    </div>
+
+    <div class="message" id="loveMessage" style="display:none;">
+      وانا كمان بحبك يا عمري ورح أضل معك وجنبك يا قلب عبود انتي ❤️🫶  
+      <div class="extra-messages">
+        <p>يا عمري انتي، بحبك وبحب صوتك وضحكتك اللي بتجنن، انتي طفلتي 💗</p>
+        <p>انتي مش بس بطة، انتي حياتي وروحي وطفلتي وملكتي وعيوني الله يخليلي إياكي ويجمعني فيكي🦢💍🌹 </p>
+      </div>
+    </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <!-- زر الرسالة المخفية -->
+    <div style="margin-top: 40px;">
+      <button class="btn yes" onclick="showHiddenPassword()">📩 رسالة مخفية</button>
+    </div>
+
+    <!-- صفحة كلمة سر الرسالة المخفية -->
+    <div id="hiddenMessagePage" style="display:none; margin-top: 50px;">
+      <h2>أدخل كلمة السر لفتح الرسالة 💌</h2>
+      <input type="password" id="hiddenPass" placeholder="كلمة السر" />
+      <button onclick="checkHiddenPassword()">عرض الرسالة</button>
+    </div>
+
+    <!-- رسالة الحب المخفية -->
+    <div id="hiddenMessage" style="display:none; margin-top: 40px; background: #ffe6f2; border-radius: 20px; padding: 25px; max-width: 700px; margin-inline: auto; color: #a0004d; font-size: 1.3em; box-shadow: 0 8px 20px rgba(0,0,0,0.1); line-height: 1.8;">
+      <p>✨ دلال حبيبة قلبي 💗، أنا بعرفك منيح وبعرف مين انتي، ووثقت فيكي من قلبي 🫶</p>
+      <p>🙏 وبدي منك ما ترجعي للغلط، وسؤال سألته لنفسي رجّع قالي: هل دلال بتستاهل فرصة ثانية؟</p>
+      <p>❤️ والجواب كان: آه... فهاي الفرصة بين إيديكي، انتبهي عليها يا طفلتي 🎀</p>
+      <p>💬 أنا بعرف انك هالمرة ندمانة، وبطلب منك وعد صادق 🙏: ما ترجعي تخبي عني شي، وخذي علاقتنا بجدية 🫶 لأنها بإذن الله رح تخلينا مع بعض وجنب بعض 🌸</p>
+      <p>🤍 انتي بتستاهلي فرصة... وبتستاهلي كل خير، احمي نفسك وابعدي عن الغلط 🚫</p>
+      <p style="margin-top: 25px;">💍 هل تريدين عبود كزوج؟ 😳❤️</p>
+      <p>🗨️ اتركي إجابتك في الشات، ولا تغيري على كلامي 🙏</p>
+    </div>
+  </div>
+
+  <audio id="messageSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_8315ef1354.mp3"></audio>
+
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "ايكادولي") {
+        document.getElementById("passwordPage").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("كلمة السر غير صحيحة!");
+      }
+    }
+
+    function showLove() {
+      document.getElementById("loveMessage").style.display = "block";
+      for (let i = 0; i < 20; i++) createHeart();
+    }
+
+    function sayNo() {
+      document.getElementById("question").innerText = "لااااااا احاااااااااااا ولييييييي بسرعة غيري رأيك 😭😭 بحبك!!!";
+    }
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (3 + Math.random() * 2) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showHiddenPassword() {
+      document.getElementById("hiddenMessagePage").style.display = "block";
+      document.getElementById("hiddenMessage").style.display = "none";
+    }
+
+    function checkHiddenPassword() {
+      var hiddenPass = document.getElementById("hiddenPass").value;
+      if (hiddenPass === "بابا") {
+        document.getElementById("hiddenMessagePage").style.display = "none";
+        document.getElementById("hiddenMessage").style.display = "block";
+        document.getElementById("messageSound").play();
+      } else {
+        alert("كلمة السر غير صحيحة! 🛑");
+      }
+    }
+  </script>
+</body>
+</html>
