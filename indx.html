@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>رسالة إلى طفلتي دلال</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #ffd6e8, #ffe6f0);
+      font-family: 'Cairo', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .envelope {
+      position: relative;
+      width: 480px;
+      height: 300px;
+      background: #ffc0cb;
+      border: 3px solid #e91e63;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+      transition: transform 0.6s ease-in-out;
+      cursor: pointer;
+    }
+
+    .flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff94c2;
+      clip-path: polygon(0 0, 50% 50%, 100% 0);
+      transform-origin: top;
+      transition: transform 0.6s;
+      z-index: 3;
+    }
+
+    .envelope.open .flap {
+      transform: rotateX(-180deg);
+    }
+
+    .paper {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff0f8;
+      padding: 16px;
+      font-size: 18px;
+      color: #880e4f;
+      overflow-y: auto;
+      border-radius: 12px;
+      line-height: 2;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+      z-index: 1;
+      transition: top 0.6s;
+    }
+
+    .envelope.open .paper {
+      top: 0;
+    }
+
+    button {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 24px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d81b60;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope" id="envelope" onclick="toggleEnvelope()">
+    <div class="flap"></div>
+    <div class="paper">
+      <strong>إلى طفلتي ومعشوقتي وحبيبتي والكائن لطيف دلال 🎀</strong><br><br>
+      يا حبيبة قلبي أنا بحبك كثير، وجربت شعور الحب معك لأول مرة. كنا مع بعض لمدة ٨ شهور، تعرفت عليك، وحبيتك، واخترتك. كنت معك دائمًا ورح أظل جنبك دائمًا يا طفلتي ❤️<br>
+      صحيح حبينا بعض وحنا صغار، بس وعد، رح نكون مع بعض لما نكبر، أنا وإنتي لبعض بإذن الله. إنتي بنت بتجنن، ودائمًا تذكري إني اخترتك من كل قلبي.<br>
+      إنتي بنت مؤدبة ومهذبة، وأنا فخور فيكي. دايمًا بدعي نكون لبعض، وإن شاء الله نكمل الطريق سوا.<br>
+      حتى لو جسدي مش جنبك، قلبي وروحي وتفكيري معك. رح يجي يوم يا حياتي وأمسك إيدك وأحضنك وتنامي بحضني يا طفلتي ❤️<br>
+      أنا دبدوبك اللي دايمًا في غرفتك، دايمًا جنبك، وكلامي معك. لا تردي على أي حدا، إنتي بتجنني إنتي طفلتي 👑<br>
+      دلال، أنا بحبك وبعشقك وبموت فيكِ. رح تظلي دلولتي، أول حب وآخر حب في حياتي. مهما صار، تذكري إني معك، أفهمك، أسمعك، وأدعمك بكل قلبي. إنتي:
+      أميرتي 👸، ملكتي 👑، فراشتي 🦋، ممرضتي 💉، سعادتي 😍، بنت الحلال 🤍، وإن شاء الله أم أولادي 👶💗<br><br>
+      <strong>بحبك من كل قلبي يا دلال 💞<br>
+      أنا عبد الرحمن، بحبك كثير<br>
+      Abood Love Dalal 🎀❤️</strong>
+    </div>
+    <button onclick="toggleEnvelope(); event.stopPropagation();">💌 فتح / إغلاق الظرف</button>
+  </div>
+
+  <script>
+    function toggleEnvelope() {
+      const envelope = document.getElementById('envelope');
+      envelope.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
